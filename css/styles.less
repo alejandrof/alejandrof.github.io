@@ -87,70 +87,138 @@ html {
 	font-family: 'Montserrat', sans-serif;
 }
 
-
 #our-history, #home {
 	width: 100%;
 	margin: 0 auto;
 }
 
-#home {
-	background-color: #3EA5CE;
-	height: 800px;
- 	.social {
- 		padding: 15px 15px;
- 	}
 
-    .couple {
-    	width: 640px;
-		margin: 0 auto;
-		padding-top: 280px;
-		text-align: center;
-		
-	    h1 {
-	    	color: #FFF;
-	    	font-size: 80px;
-	    	line-height: 0;
-	    	font-weight: 400;
-	    }
-
-    	h1:before,
-    	h1:after {
-			font-family: 'flower-wedding';
-			content: "e";
-			color: #EFEFEF;
-			speak: none;
-			font-weight: normal;
-			font-variant: normal;
-			text-transform: none;
-			line-height: 0.4;
-			-webkit-font-smoothing: antialiased;
-			-moz-osx-font-smoothing: grayscale;
-		}
-
-    	h1:after {
-			content: "t";
-		}
-
-	    div {
-	    	width: 350px;
-	    	margin: 0 auto;
-	    	color: #DBDBDB;
-	    	font-size: 20px;
-	    	letter-spacing: 2px;
-	    }
-    }
-}
-
-#our-history {
-	background-color: #EFEFEF;
-	height: 1800px;
+.container {
+	width: 100%;
+	margin: 0 auto;
 	
-    .history-wrapper {
-    	width: 1024px;
-		margin: 0 auto;
-		padding: 5px;
-    }
+	#home {
+		background-color: #3EA5CE;
+		height: 800px;
+	 	.social {
+	 		padding: 15px 15px;
+	 	}
+
+	    .couple {
+	    	width: 640px;
+			margin: 0 auto;
+			padding-top: 230px;
+			text-align: center;
+
+			#defaultCountdown {
+				color: rgba(0, 0, 0, 0.4);
+			}
+
+		    h1 {
+		    	color: #FFF;
+		    	font-size: 80px;
+		    	line-height: 0;
+		    	font-weight: 400;
+		    }
+
+	    	h1:before,
+	    	h1:after {
+				font-family: 'flower-wedding';
+				content: "q";
+				color: #EFEFEF;
+				speak: none;
+				font-weight: normal;
+				font-variant: normal;
+				text-transform: none;
+				line-height: 0.4;
+				-webkit-font-smoothing: antialiased;
+				-moz-osx-font-smoothing: grayscale;
+			}
+
+	    	h1:after {
+				content: "y";
+			}
+
+		    div {
+		    	width: 350px;
+		    	margin: 0 auto;
+		    	color: #DBDBDB;
+		    	font-size: 20px;
+		    	letter-spacing: 2px;
+		    }
+	    }
+	}
+
+	#our-history {
+		background-color: #EFEFEF;
+		
+	    .history-wrapper {
+	    	width: 580px;
+			margin: 0 auto;
+			padding: 65px;
+	    }
+
+		h3 {
+			font-size: 40px;
+			color: #4C4C4C;
+			line-height: 1;
+		}
+
+		p {
+			font-family: 'Merriweather', serif;
+			font-size: 22px;
+			color: #4C4C4C;
+			line-height: 1.5;
+		}
+
+		blockquote {
+			font-family: 'Lato', sans-serif;
+			font-size: 26px;
+			font-weight: 400;
+			color: #A0A0A0;
+			width: 260px;
+			text-align: right;
+			display: inline-block;
+			margin-left: -120px;
+		}
+
+		span {
+			font-family: 'Amatic SC', cursive;
+			font-size: 33px;
+			font-weight: 700;
+			letter-spacing: 1px;
+			color: #C61EAF;
+			display: inline-block;
+			width: 290px;
+			vertical-align: top;
+			height: 120px;
+			padding-top: 70px;
+			-webkit-transform: rotate(1deg);
+			-moz-transform: rotate(1deg);
+			-o-transform: rotate(1deg);
+			writing-mode: lr-tb;
+		}
+
+		.part-two {
+			blockquote {
+				float: right;
+				text-align: left;
+				margin-right: -110px;
+				width: 390px;
+			}
+
+			span {
+				width: 270px;
+				text-align: right;
+				-webkit-transform: rotate(-1deg);
+				-moz-transform: rotate(-1deg);
+				-o-transform: rotate(-1deg);
+			}
+		}
+
+		.part-three {
+			clear: both;
+		}
+	}
 }
-
-
 
