@@ -85,6 +85,7 @@ hatch animation
 
 html {
 	font-family: 'Montserrat', sans-serif;
+	background-color: #A9D636;
 }
 
 #our-history, #home {
@@ -98,15 +99,16 @@ html {
 	margin: 0 auto;
 
 	h3 {
-		font-size: 40px;
-		color: #4C4C4C;
+		font-size: 50px;
+		color: #367419;
 		line-height: 1;
 	}
 
 	#social,
 	#our-history,
 	#map,
-	#pictures {
+	#pictures,
+	#gifts {
 			span {
 			font-family: 'Amatic SC', cursive;
 			font-size: 33px;
@@ -170,7 +172,8 @@ html {
 	}
 
 	#our-history {
-		background-color: #EFEFEF;
+		background-color: #A9D636;
+		padding: 50px 0;
 		
 	    .history-wrapper {
 	    	width: 580px;
@@ -181,7 +184,7 @@ html {
 		p {
 			font-family: 'Merriweather', serif;
 			font-size: 22px;
-			color: #4C4C4C;
+			color: #3F7731;
 			line-height: 1.5;
 		}
 
@@ -189,7 +192,7 @@ html {
 			font-family: 'Lato', sans-serif;
 			font-size: 26px;
 			font-weight: 400;
-			color: #A0A0A0;
+			color: #FFF;
 			width: 260px;
 			text-align: right;
 			display: inline-block;
@@ -207,6 +210,22 @@ html {
 			-o-transform: rotate(1deg);
 			writing-mode: lr-tb;
 		}		
+
+		.part-one {
+
+	    	span:after {
+				font-family: 'flower-wedding';
+				content: "r";
+				font-size: 70px;
+				color: #EFEFEF;
+				speak: none;
+				font-weight: normal;
+				-webkit-font-smoothing: antialiased;
+				-moz-osx-font-smoothing: grayscale;
+				margin-left: 10px;
+			}
+
+		}
 
 		.part-two {
 			blockquote {
@@ -232,6 +251,7 @@ html {
 
 	#map {
 		position: relative;
+		height: 820px;
 		
 		.map-wrapper {
 			position: absolute;
@@ -260,6 +280,12 @@ html {
 				span {
 					width: 400px;
 					text-align: right;
+					color: #C2FF00;
+					    
+				}
+
+				h5 {
+					font-size: 24px;
 					    
 				}
 
@@ -270,7 +296,128 @@ html {
 			}
 		}
 	}
+	
+	#pictures {
+		background-color: #E065D5;
+		width: 100%;
+		padding: 120px 0;
+		height: 860px;
+
+		.picture-wrapper {
+			width: 1024px;
+			margin: 0 auto;
+			
+			h3,
+			span {
+				color: white;
+			}
+
+			h3 {
+				display: inline;
+				margin-right: 25px;
+			}
+
+			ul {
+				padding: 0;
+				margin-top: 50px;
+				
+				.polaroid {
+				    background-color:white;
+				    padding: 10px 10px 10px 10px;
+				    border: 1px solid #BFBFBF;
+				    box-shadow: 0 5px 10px 1px rgba(0, 0, 0, 0.6);
+				    width: 265px;
+				    display: inline-block;
+				    list-style: none;
+				    margin: 30px 10px 0;
+				}
+
+				.polaroid a {
+					font-family: 'Amatic SC', cursive;
+					font-size: 33px;
+					font-weight: 700;
+					letter-spacing: 1px;
+					color: #C61EAF;
+				}
+
+				.polaroid a:after {
+					content: attr(title);
+					width: 200px;
+					margin: 0 auto;
+					display: block;
+					text-align: center;
+				}
+
+				.polaroid a:over {
+					font-size:30px;
+				}
+
+			}
+
+		}
+	}
+
+	#gifts {
+		overflow: hidden;
+		background-color: #FFB800;
+		height: 700px;
+		background-image: url('http://localhost:8000/css/../img/flor-cris-small.png');
+		background-position-x: 0;
+		background-position-y: 240px;
+		background-repeat: no-repeat;
+		
+		.gifts-wrapper {
+			width: 1024px;
+			height: 540px;
+			margin: 0 auto;
+			padding: 80px 0;
+			
+			h3 {
+				margin: 0;
+				color: #C61EAF;
+			}
+
+			span {
+				color: #45524F;
+				font-size: 45px;
+			}
+		}
+	}
 }
 
 
+
+
+#avion{
+	position: relative;
+	top: 0;
+	left: -870px;
+	overflow: hidden;
+	animation-name: fly;
+	-webkit-animation-name: fly;	
+
+	animation-duration: 5.5s;	
+	-webkit-animation-duration: 5.5s;
+
+	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+}
+
+@keyframes fly {
+	0% {
+		left: -870px;	
+	}
+	100% {
+		left: 800px;	
+	}						
+}
+
+@-webkit-keyframes fly {
+	0% {
+		left: -870px;	
+	}
+	100% {
+		left: 1800px;	
+	}		
+}
 
