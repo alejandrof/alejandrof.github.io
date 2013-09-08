@@ -96,7 +96,26 @@ html {
 .container {
 	width: 100%;
 	margin: 0 auto;
-	
+
+	h3 {
+		font-size: 40px;
+		color: #4C4C4C;
+		line-height: 1;
+	}
+
+	#social,
+	#our-history,
+	#map,
+	#pictures {
+			span {
+			font-family: 'Amatic SC', cursive;
+			font-size: 33px;
+			font-weight: 700;
+			letter-spacing: 1px;
+			color: #C61EAF;
+		}
+	}
+
 	#home {
 		background-color: #3EA5CE;
 		height: 800px;
@@ -159,12 +178,6 @@ html {
 			padding: 65px;
 	    }
 
-		h3 {
-			font-size: 40px;
-			color: #4C4C4C;
-			line-height: 1;
-		}
-
 		p {
 			font-family: 'Merriweather', serif;
 			font-size: 22px;
@@ -183,12 +196,7 @@ html {
 			margin-left: -120px;
 		}
 
-		span {
-			font-family: 'Amatic SC', cursive;
-			font-size: 33px;
-			font-weight: 700;
-			letter-spacing: 1px;
-			color: #C61EAF;
+			span {
 			display: inline-block;
 			width: 290px;
 			vertical-align: top;
@@ -198,7 +206,7 @@ html {
 			-moz-transform: rotate(1deg);
 			-o-transform: rotate(1deg);
 			writing-mode: lr-tb;
-		}
+		}		
 
 		.part-two {
 			blockquote {
@@ -221,5 +229,48 @@ html {
 			clear: both;
 		}
 	}
+
+	#map {
+		position: relative;
+		
+		.map-wrapper {
+			position: absolute;
+			right: 0;
+			top: 80px;
+			
+				h3,
+				h5,
+				span {
+					float: right;
+					margin-right: 200px;
+				}
+
+				h3,
+				h5 {
+					color: #FFF;
+					line-height: 0;
+					margin-top: 0;
+				}
+
+				span,
+				h5, {
+					clear: right;
+				}
+
+				span {
+					width: 400px;
+					text-align: right;
+					    
+				}
+
+		iframe {
+			position: absolute;
+			bottom: 165px;
+			z-index: 0;
+			}
+		}
+	}
 }
+
+
 
