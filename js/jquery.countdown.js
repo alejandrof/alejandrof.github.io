@@ -18,7 +18,7 @@ function Countdown() {
 		// The display texts for the counters
 		labels: ['Years', 'Months', 'Weeks', 'Días', 'Horas', 'Min.', 'Sec.'],
 		// The display texts for the counters if only one
-		labels1: ['Year', 'Month', 'Week', 'Day', 'Hour', 'Minute', 'Second'],
+		labels1: ['Year', 'Month', 'Week', 'Dia', 'Hora', 'Min.', 'Sec.'],
 		compactLabels: ['y', 'm', 'w', 'd'], // The compact texts for the counters
 		whichLabels: null, // Function to determine which labels to use
 		digits: ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'], // The digits to display
