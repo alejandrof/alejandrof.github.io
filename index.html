@@ -28,6 +28,16 @@
 
   </head>
   <body>
+    <div class="navbar">
+      <nav>
+        <a href="#home" class="nav-item scroll">Inicio</a>
+        <a href="#our-history" class="nav-item scroll">Nosotros</a>
+        <a href="#map" class="nav-item scroll">¿Dónde?</a>
+        <a href="#pictures" class="nav-item scroll">Fotos</a>
+        <a href="#gifts" class="nav-item scroll">Regalos</a>
+        <a href="#" class="nav-item scroll">Hola!</a>
+      </nav>
+    </div>
     <div class="container">
       <div id="home" class="hatch">
         <div class="couple">
@@ -125,42 +135,19 @@
     </div>
   </body>
 
-<!-- SCM Music Player http://scmplayer.net -->
-  <script type="text/javascript" src="http://scmplayer.net/script.js" 
-  data-config="{
-    'skin':'http://alejandrof.github.io/css/black/player-custom.css',
-    'volume':100,
-    'autoplay':true,
-    'shuffle':false,
-    'repeat':1,
-    'placement':'top',
-    'showplaylist':false,
-    'playlist':[
-      {
-        'title':'Oh Darling (Live) - Sara Bareilles',
-        'url':'http://www.youtube.com/watch?v=ovOEPQMjkfo'
-      },{
-        'title':'Love of My Life (Live) - Queen',
-        'url':'http://www.youtube.com/watch?v=v3xwCkhmies'
-      },{
-        'title':'Love Song - Sara Bareilles',
-        'url':'http://www.youtube.com/watch?v=qi7Yh16dA0w'
-      },{
-        'title':'Que bueno, que bueno - Jarabe de Palo y Jorge Dexler',
-        'url':'http://www.youtube.com/watch?v=EZzRDQCZhPE'
-      },{
-        'title':'Caf%E9 Tacvba - Eres',
-        'url':'http://www.youtube.com/watch?v=kBpL4n6m8K0'
-      },{
-        'title':'Contigo - El Canto Del Loco',
-        'url':'http://www.youtube.com/watch?v=YtfkLlphD6U'
-      },{
-        'title':'Todo - Pereza',
-        'url':'http://www.youtube.com/watch?v=TD2s0T0Wx1w'
-      }
-    ]}" >
-  </script>
-<!-- SCM Music Player script end -->
+    <script>jQuery(document).ready(function($) {
+        $(".scroll").click(function(event){   
+          event.preventDefault();
+          $('html,body').animate({scrollTop:$(this.hash).offset().top-0}, 600);
+        });
+      });
+    </script>
+
+
+<!-- SCM Music Player http://scmplayer.net-->
+<script type="text/javascript" src="http://scmplayer.net/script.js" 
+data-config="{'skin':'http://alejandrof.github.io/css/black/player-custom.css','volume':100,'autoplay':true,'shuffle':false,'repeat':1,'placement':'top','showplaylist':false,'playlist':[{'title':'Oh Darling (Live) - Sara Bareilles','url':'http://www.youtube.com/watch?v=ovOEPQMjkfo'},{'title':'Love of My Life (Live) - Queen','url':'http://www.youtube.com/watch?v=v3xwCkhmies'},{'title':'Love Song - Sara Bareilles','url':'http://www.youtube.com/watch?v=qi7Yh16dA0w'},{'title':'Que bueno, que bueno - Jarabe de Palo y Jorge Dexler','url':'http://www.youtube.com/watch?v=EZzRDQCZhPE'},{'title':'Caf%E9 Tacvba - Eres','url':'http://www.youtube.com/watch?v=kBpL4n6m8K0'},{'title':'Contigo - El Canto Del Loco','url':'http://www.youtube.com/watch?v=YtfkLlphD6U'},{'title':'Todo - Pereza','url':'http://www.youtube.com/watch?v=TD2s0T0Wx1w'},{'title':'Hacer un puente - La Franela','url':'http://www.youtube.com/watch?v=I8cnKNB2WIk'},{'title':'My First My Last My Everything - Barry White','url':'http://www.youtube.com/watch?v=qdTDFUaaL9s'},{'title':'For Once In My Life - (Live) Dara Maclean','url':'http://www.youtube.com/watch?v=FApu12-BJNk'},{'title':'Kiss Me - Sixpence None The Richer','url':'http://www.youtube.com/watch?v=8N-qO3sPMjc'},{'title':'Safe And Sound - Capital Cities','url':'http://www.youtube.com/watch?v=47dtFZ8CFo8'},{'title':'Take my hand - Poncho','url':'http://www.youtube.com/watch?v=UaLj8PhrZ3k'}]}" ></script>
+ <!-- SCM Music Player script end -->
 
 
 
