@@ -30,6 +30,10 @@
 #playlist .odd{ background-color:#ddd;}
 #playlist .focus{ background-color:#666; color:#FFF;}
 
+#playlist .module .odd {
+	background-color: #eee !important;
+}
+
 #playlist .module .odd>div {
 	visibility: hidden;
 }
