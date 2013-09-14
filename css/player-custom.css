@@ -35,5 +35,5 @@
 }
 
 #playlist .module .odd {
-	visibility: hidden;
+	opacity: 0.3;
 }
