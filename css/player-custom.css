@@ -34,6 +34,6 @@
 	background-color: #eee !important;
 }
 
-#playlist .module .odd>div {
+#playlist .module .odd {
 	visibility: hidden;
 }
