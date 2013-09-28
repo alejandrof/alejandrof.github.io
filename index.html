@@ -13,8 +13,11 @@
     <link rel="stylesheet" href="css/styles.less" type="text/less" media="screen" />
     <link rel="stylesheet" href="css/jquery.countdown.css" type="text/css" media="screen" >
     <script src="js/less.js" type="text/javascript"></script>
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script> 
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> 
     <script type="text/javascript" src="js/jquery.countdown.js"></script>
+    <!-- Add fancyBox -->
+    <link rel="stylesheet" href="css/jquery.fancybox.css" type="text/css" media="screen" />
+    <script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
     
     <!--  script para el contador  -->
     <script type="text/javascript">
@@ -88,36 +91,20 @@
           <span>(Vos reíte nomás, ya te vamos a escrachar en la fiesta...)</span>
             <ul>
               <li class="polaroid">
-                <a href="#" style="text-decoration: none;" title="Ella">
+                <a class="open_fancybox" href="#pictures" style="text-decoration: none;" title="ella">
                   <img alt="Florencia" style="width: 265px "src="../img/flor-caballo.jpg">
                 </a>
               </li>
               <li class="polaroid">
-                <a href="#" style="text-decoration: none;" title="La parejita">
+                <a class="open_fancybox-2" href="#" style="text-decoration: none;" title="la parejita">
                   <img alt="Cristian" style="width: 265px" src="../img/los-dos.jpg">
                 </a>
               </li>
               <li class="polaroid">
-                <a href="#" style="text-decoration: none;" title="El">
-                  <img alt="Cristian" style="width: 265px" src="../img/los-dos.jpg">
+                <a class="open_fancybox-3" href="#" style="text-decoration: none;" title="él">
+                  <img alt="Cristian" style="width: 265px" src="../img/cris.jpg">
                 </a>
               </li>
-              <li class="polaroid">
-                <a href="#" style="text-decoration: none;" title="Ella">
-                  <img alt="Florencia" style="width: 265px "src="../img/flor-caballo.jpg">
-                </a>
-              </li>
-              <li class="polaroid">
-                <a href="#" style="text-decoration: none;" title="La parejita">
-                  <img alt="Cristian" style="width: 265px" src="../img/los-dos.jpg">
-                </a>
-              </li>
-              <li class="polaroid">
-                <a href="#" style="text-decoration: none;" title="El">
-                  <img alt="Cristian" style="width: 265px" src="../img/los-dos.jpg">
-                </a>
-              </li>
-            </ul>
         </div>
 
       </div>
@@ -127,6 +114,9 @@
         <div class="gifts-wrapper">
           <h3>Regalos</h3>
           <span>Tenemos un montón de planes y contamos con ustedes, pónganse las pilas :)</span>
+          <p>
+            Podés depositarnos en nuestra cuenta en pesos <span>CU 402-354772-4</span>, el CBU de la misma es <span>0720402388000035477240</span> que está a nombre de <span>Maria Florencia DeBuono</span>, DNI <span>28231756</span>
+          </p>
           <img id="avion" src="img/plane.png" alt="">
         </div>
 
@@ -143,57 +133,377 @@
       });
     </script>
 
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(".fancybox").fancybox();
+      });
+    </script>
 
-<!-- SCM Music Player http://scmplayer.net-->
-<script type="text/javascript" src="http://scmplayer.net/script.js" 
-data-config="
-  {
-  'skin':'http://alejandrof.github.io/css/black/player-custom.css',
-  'volume':100,
-  'autoplay':true,
-  'shuffle':false,
-  'repeat':1,
-  'placement':'top',
-  'showplaylist':false,
-  'playlist':
-    [
+
+    <!-- SCM Music Player http://scmplayer.net-->
+    <script type="text/javascript" src="http://scmplayer.net/script.js" 
+    data-config="
       {
-        'title':'Hacer un puente - La Franela',
-        'url':'http://www.youtube.com/watch?v=I8cnKNB2WIk'
-      },{
-        'title':'For Once In My Life - (Live) Dara Maclean',
-        'url':'http://www.youtube.com/watch?v=FApu12-BJNk'
-      },{
-        'title':'Love Song - Sara Bareilles',
-        'url':'http://www.youtube.com/watch?v=qi7Yh16dA0w'
-      },{
-        'title':'Safe And Sound - Capital Cities',
-        'url':'http://www.youtube.com/watch?v=47dtFZ8CFo8'
-      },{
-        'title':'Oh Darling (Live) - Sara Bareilles',
-        'url':'http://www.youtube.com/watch?v=ovOEPQMjkfo'
-      },{
-        'title':'My First My Last My Everything - Barry White',
-        'url':'http://www.youtube.com/watch?v=qdTDFUaaL9s'
-      },{
-        'title':'Baby I Love You - The Ramones',
-        'url':'http://www.youtube.com/watch?v=PqZmJ7RGAP4'
-      },{
-        'title':'Real Love - The Beatles',
-        'url':'http://www.youtube.com/watch?v=R7twIF8PWic'
-      },{
-        'title':'Sweet Child Of Mine - Guns N%27 Roses',
-        'url':'http://www.youtube.com/watch?v=bzAGZT_XTAk'
-      },{
-        'title':'Rebajas De Enero - Joaquín Sabina',
-        'url':'http://www.youtube.com/watch?v=DVxAIAi9XVA'
-      }
-    ]
-  }" ></script>
- <!-- SCM Music Player script end -->
+      'skin':'http://alejandrof.github.io/css/black/player-custom.css',
+      'volume':100,
+      'autoplay':false,
+      'shuffle':false,
+      'repeat':1,
+      'placement':'top',
+      'showplaylist':false,
+      'playlist':
+        [
+          {
+            'title':'Hacer un puente - La Franela',
+            'url':'http://www.youtube.com/watch?v=I8cnKNB2WIk'
+          },{
+            'title':'For Once In My Life - (Live) Dara Maclean',
+            'url':'http://www.youtube.com/watch?v=FApu12-BJNk'
+          },{
+            'title':'Love Song - Sara Bareilles',
+            'url':'http://www.youtube.com/watch?v=qi7Yh16dA0w'
+          },{
+            'title':'Safe And Sound - Capital Cities',
+            'url':'http://www.youtube.com/watch?v=47dtFZ8CFo8'
+          },{
+            'title':'Oh Darling (Live) - Sara Bareilles',
+            'url':'http://www.youtube.com/watch?v=ovOEPQMjkfo'
+          },{
+            'title':'My First My Last My Everything - Barry White',
+            'url':'http://www.youtube.com/watch?v=qdTDFUaaL9s'
+          },{
+            'title':'Baby I Love You - The Ramones',
+            'url':'http://www.youtube.com/watch?v=PqZmJ7RGAP4'
+          },{
+            'title':'Real Love - The Beatles',
+            'url':'http://www.youtube.com/watch?v=R7twIF8PWic'
+          },{
+            'title':'Sweet Child Of Mine - Guns N%27 Roses',
+            'url':'http://www.youtube.com/watch?v=bzAGZT_XTAk'
+          },{
+            'title':'Rebajas De Enero - Joaquín Sabina',
+            'url':'http://www.youtube.com/watch?v=DVxAIAi9XVA'
+          }
+        ]
+      }" ></script>
+     <!-- SCM Music Player script end -->
+
+      <script>
+        $(".open_fancybox").click(function() {
+          
+          $.fancybox.open([
+              {
+                  href : 'albums/flor/1.png',
+              },
+              {
+                  href : 'albums/flor/2.jpg',
+              },
+              {
+                  href : 'albums/flor/3.jpg',
+              },
+              {
+                  href : 'albums/flor/4.jpg',
+              },
+              {
+                  href : 'albums/flor/5.jpg',
+              },
+              {
+                  href : 'albums/flor/6.jpg',
+              },
+              {
+                  href : 'albums/flor/7.jpg',
+              },
+              {
+                  href : 'albums/flor/8.jpg',
+              },
+              {
+                  href : 'albums/flor/9.jpg',
+              },
+              {
+                  href : 'albums/flor/10.jpg',
+              },
+              {
+                  href : 'albums/flor/11.jpg',
+              },
+              {
+                  href : 'albums/flor/12.jpg',
+              },
+              {
+                  href : 'albums/flor/13.jpg',
+              },
+              {
+                  href : 'albums/flor/14.jpg',
+              },
+              {
+                  href : 'albums/flor/15.jpg',
+              },
+              {
+                  href : 'albums/flor/16.jpg',
+              },
+              {
+                  href : 'albums/flor/17.jpg',
+              },
+              {
+                  href : 'albums/flor/18.jpg',
+              },
+              {
+                  href : 'albums/flor/19.jpg',
+              },
+              {
+                  href : 'albums/flor/20.jpg',
+              },
+              {
+                  href : 'albums/flor/21.jpg',
+              },
+              {
+                  href : 'albums/flor/22.jpg',
+              },
+              {
+                  href : 'albums/flor/23.jpg',
+              },
+              {
+                  href : 'albums/flor/24.jpg',
+              },
+              {
+                  href : 'albums/flor/25.jpg',
+              },
+              {
+                  href : 'albums/flor/26.jpg',
+              },
+              {
+                  href : 'albums/flor/27.jpg',
+              },
+              {
+                  href : 'albums/flor/28.jpg',
+              },
+              {
+                  href : 'albums/flor/29.jpg',
+              },
+              {
+                  href : 'albums/flor/30.jpg',
+              },
+              {
+                  href : 'albums/flor/31.jpg',
+              },
+              {
+                  href : 'albums/flor/32.jpg',
+              },
+              {
+                  href : 'albums/flor/33.jpg',
+              },
+              {
+                  href : 'albums/flor/34.jpg',
+              },
+              {
+                  href : 'albums/flor/35.jpg',
+              },
+              {
+                  href : 'albums/flor/36.jpg',
+              },
+              {
+                  href : 'albums/flor/37.jpg',
+              },
+              {
+                  href : 'albums/flor/38.jpg',
+              }
+          ], {
+              padding : 0
+          });
+          
+          return false;
+          
+      });
+      </script>
 
 
+      <script>
+        $(".open_fancybox-2").click(function() {
+          
+          $.fancybox.open([
+              {
+                  href : 'albums/pareja/1.jpg',
+              },
+              {
+                  href : 'albums/pareja/2.jpg',
+              },
+              {
+                  href : 'albums/pareja/3.jpg',
+              },
+              {
+                  href : 'albums/pareja/4.jpg',
+              },
+              {
+                  href : 'albums/pareja/5.jpg',
+              },
+              {
+                  href : 'albums/pareja/6.jpg',
+              },
+              {
+                  href : 'albums/pareja/7.jpg',
+              },
+              {
+                  href : 'albums/pareja/8.jpg',
+              },
+              {
+                  href : 'albums/pareja/9.jpg',
+              },
+              {
+                  href : 'albums/pareja/10.jpg',
+              },
+              {
+                  href : 'albums/pareja/11.jpg',
+              },
+              {
+                  href : 'albums/pareja/12.jpg',
+              },
+              {
+                  href : 'albums/pareja/13.jpg',
+              },
+              {
+                  href : 'albums/pareja/14.jpg',
+              },
+              {
+                  href : 'albums/pareja/15.jpg',
+              },
+              {
+                  href : 'albums/pareja/16.jpg',
+              }
+          ], {
+              padding : 0
+          });
+          
+          return false;
+          
+      });
+      </script>
 
+      <script>
+        $(".open_fancybox-3").click(function() {
+          
+          $.fancybox.open([
+              {
+                  href : 'albums/cris/1.jpg',
+              },
+              {
+                  href : 'albums/cris/2.jpg',
+              },
+              {
+                  href : 'albums/cris/3.jpg',
+              },
+              {
+                  href : 'albums/cris/4.jpg',
+              },
+              {
+                  href : 'albums/cris/5.jpg',
+              },
+              {
+                  href : 'albums/cris/6.jpg',
+              },
+              {
+                  href : 'albums/cris/7.jpg',
+              },
+              {
+                  href : 'albums/cris/8.jpg',
+              },
+              {
+                  href : 'albums/cris/9.jpg',
+              },
+              {
+                  href : 'albums/cris/10.jpg',
+              },
+              {
+                  href : 'albums/cris/11.jpg',
+              },
+              {
+                  href : 'albums/cris/12.jpg',
+              },
+              {
+                  href : 'albums/cris/13.jpg',
+              },
+              {
+                  href : 'albums/cris/14.jpg',
+              },
+              {
+                  href : 'albums/cris/15.jpg',
+              },
+              {
+                  href : 'albums/cris/015.jpg',
+              },
+              {
+                  href : 'albums/cris/16.jpg',
+              },
+              {
+                  href : 'albums/cris/17.jpg',
+              },
+              {
+                  href : 'albums/cris/18.jpg',
+              },
+              {
+                  href : 'albums/cris/19.jpg',
+              },
+              {
+                  href : 'albums/cris/019.jpg',
+              },
+              {
+                  href : 'albums/cris/20.jpg',
+              },
+              {
+                  href : 'albums/cris/020.jpg',
+              },
+              {
+                  href : 'albums/cris/21.jpg',
+              },
+              {
+                  href : 'albums/cris/22.jpg',
+              },
+              {
+                  href : 'albums/cris/23.jpg',
+              },
+              {
+                  href : 'albums/cris/24.jpg',
+              },
+              {
+                  href : 'albums/cris/25.jpg',
+              },
+              {
+                  href : 'albums/cris/26.jpg',
+              },
+              {
+                  href : 'albums/cris/27.jpg',
+              },
+              {
+                  href : 'albums/cris/28.jpg',
+              },
+              {
+                  href : 'albums/cris/29.jpg',
+              },
+              {
+                  href : 'albums/cris/30.jpg',
+              },
+              {
+                  href : 'albums/cris/31.jpg',
+              },
+              {
+                  href : 'albums/cris/32.jpg',
+              },
+              {
+                  href : 'albums/cris/34.jpg',
+              },
+              {
+                  href : 'albums/cris/35.jpg',
+              },
+              {
+                  href : 'albums/cris/36.jpg',
+              }
+          ], {
+              padding : 0
+          });
+          
+          return false;
+          
+      });
+          
+      </script>
 </html>
 
 
