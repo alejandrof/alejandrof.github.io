@@ -135,32 +135,42 @@ html {
 	}
 
 	#home {
-		background-color: #3EA5CE;
+		background: #ff84ae; /* Old browsers */
+		background: -moz-linear-gradient(left,  #ff84ae 0%, #ff84ae 50%, #3ea5ce 50%, #3ea5ce 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, right top, color-stop(0%,#ff84ae), color-stop(50%,#ff84ae), color-stop(50%,#3ea5ce), color-stop(100%,#3ea5ce)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(left,  #ff84ae 0%,#ff84ae 50%,#3ea5ce 50%,#3ea5ce 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(left,  #ff84ae 0%,#ff84ae 50%,#3ea5ce 50%,#3ea5ce 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(left,  #ff84ae 0%,#ff84ae 50%,#3ea5ce 50%,#3ea5ce 100%); /* IE10+ */
+		background: linear-gradient(to right,  #ff84ae 0%,#ff84ae 50%,#3ea5ce 50%,#3ea5ce 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff84ae', endColorstr='#3ea5ce',GradientType=1 ); /* IE6-9 */
 		height: 900px;
 		width: 100%;
 
 	    .couple {
-	    	width: 1240px;
-			margin: 0 auto;
-			padding-top: 280px;
-			text-align: center;
+				width: 1240px;
+				margin: 0 auto;
+				text-align: center;
+				position: relative;
+				bottom: 90px;
 
 			#defaultCountdown {
 				color: rgba(0, 0, 0, 0.4);
+				margin-top: -42px;
 			}
 
 		    h1 {
 		    	color: #FFF;
-		    	font-size: 80px;
+		    	font-size: 60px;
 		    	line-height: 0;
 		    	font-weight: 400;
 		    }
 
-	    	h1:before,
-	    	h1:after {
+	    	#defaultCountdown:before,
+	    	#defaultCountdown:after {
 				font-family: 'flower-wedding';
+				font-size: 100px;
 				content: "eqo ";
-				color: #217799;
+				color: rgba(54, 54, 54, 0.5);
 				speak: none;
 				font-weight: normal;
 				font-variant: normal;
@@ -170,18 +180,52 @@ html {
 				-moz-osx-font-smoothing: grayscale;
 			}
 
-	    	h1:after {
+	    	#defaultCountdown:before {
+				display: block;
+				position: relative;
+				top: 255px;
+				right: 290px;
+				}
+
+	    	#defaultCountdown:after {
 				content: "y ir";
-			}
+				display: block;
+				position: relative;
+				left: 300px;
+				top: 160px;
+				}
 
 		    div {
-		    	width: 350px;
+		    	width: 500px;
 		    	margin: 0 auto;
 		    	color: #DBDBDB;
 		    	font-size: 20px;
-		    	letter-spacing: 2px;
 		    }
 	    }
+
+		.couple:before,
+		.couple:after {
+			content: " ";
+			display: block;
+			margin: 0 auto;
+			width: 140px;
+			height: 140px;
+			background: #FF84AE;
+			-moz-border-radius: 70px;
+			-webkit-border-radius: 70px;
+			border-radius: 70px;
+			position: relative;
+			top: 320px;
+			right: 25px;
+			}
+
+		.couple:after {
+			background: #3EA5CE;
+			top: 135px;
+			right: 0;
+			left: 30px;
+			}
+
 	}
 
 	#our-history {
