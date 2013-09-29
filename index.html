@@ -38,7 +38,7 @@
         <a href="#map" class="nav-item scroll">¿Dónde?</a>
         <a href="#pictures" class="nav-item scroll">Fotos</a>
         <a href="#gifts" class="nav-item scroll">Regalos</a>
-        <a href="#" class="nav-item scroll">Hola!</a>
+        <a href="#comments" class="nav-item scroll">Hola!</a>
       </nav>
     </div>
     <div class="container">
@@ -124,6 +124,28 @@
 
 
       </div>
+
+      <div id="comments">
+        <div class="disqus-wrapper">
+        <h3>Libro de visitas</h3>
+        <span>Acá podés dejarnos tu saludo o comentario</span>
+          <div id="disqus_thread">
+          <script type="text/javascript">
+              /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+              var disqus_shortname = 'bodaflorenciaycristian'; // required: replace example with your forum shortname
+
+              /* * * DON'T EDIT BELOW THIS LINE * * */
+              (function() {
+                  var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                  dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+              })();
+          </script>
+          <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+          <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 
@@ -148,7 +170,7 @@
       {
       'skin':'http://alejandrof.github.io/css/black/player-custom.css',
       'volume':100,
-      'autoplay':false,
+      'autoplay':true,
       'shuffle':false,
       'repeat':1,
       'placement':'top',

@@ -135,7 +135,8 @@ html {
 	#our-history,
 	#map,
 	#pictures,
-	#gifts {
+	#gifts,
+	#comments {
 			span {
 			font-family: 'Amatic SC', cursive;
 			font-size: 33px;
@@ -429,10 +430,10 @@ html {
 	#gifts {
 		overflow: hidden;
 		background-color: #FFB800;
-		height: 840px;
+		height: 900px;
 		background-image: url('../img/flor-cris-small.png');
 		background-position-x: 0;
-		background-position-y: 380px;
+		background-position-y: 440px;
 		background-repeat: no-repeat;
 		
 		.gifts-wrapper {
@@ -460,6 +461,29 @@ html {
 					font-size: 25px;
 			}
 
+			}
+		}
+	}
+
+	#comments {
+		background-color: #90F;
+		height: auto;
+		min-height: 840px;
+		
+		.disqus-wrapper {
+			padding-top: 120px;
+			width: 800px;
+			margin: 0 auto;
+			
+			h3 {
+				margin: 0;
+				color: #FFB800;
+			}
+			
+			span {
+				color: #FFF;
+				margin-bottom: 40px;
+				display: block;
 			}
 		}
 	}
